@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 import fpvImg from "@/assets/fpv-drone.jpg";
 import kamikazeImg from "@/assets/kamikaze-drone.jpg";
 import surveillanceImg from "@/assets/surveillance-drone.jpg";
@@ -8,16 +9,19 @@ const products = [
     title: "FPV Drones",
     description: "High-speed first-person-view platforms engineered for tactical reconnaissance and rapid strike operations.",
     image: fpvImg,
+    slug: "fpv-7",
   },
   {
     title: "Kamikaze Drones",
     description: "Precision loitering munitions designed for surgical strikes with minimal collateral impact.",
     image: kamikazeImg,
+    slug: "shiva-1",
   },
   {
     title: "Surveillance Drones",
     description: "Long-endurance ISR platforms delivering persistent wide-area situational awareness.",
     image: surveillanceImg,
+    slug: "sudarshan-ac",
   },
 ];
 
@@ -46,19 +50,23 @@ const ProductsSection = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: i * 0.15 }}
-              className="group bg-card rounded-xl overflow-hidden border border-border card-hover"
             >
-              <div className="overflow-hidden aspect-[4/3]">
-                <img
-                  src={product.image}
-                  alt={product.title}
-                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
-                />
-              </div>
-              <div className="p-6">
-                <h3 className="font-display text-xl font-bold text-foreground mb-2">{product.title}</h3>
-                <p className="text-muted-foreground text-sm leading-relaxed">{product.description}</p>
-              </div>
+              <Link
+                to={`/product/${product.slug}`}
+                className="group bg-card rounded-xl overflow-hidden border border-border card-hover block"
+              >
+                <div className="overflow-hidden aspect-[4/3]">
+                  <img
+                    src={product.image}
+                    alt={product.title}
+                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                  />
+                </div>
+                <div className="p-6">
+                  <h3 className="font-display text-xl font-bold text-foreground mb-2">{product.title}</h3>
+                  <p className="text-muted-foreground text-sm leading-relaxed">{product.description}</p>
+                </div>
+              </Link>
             </motion.div>
           ))}
         </div>
