@@ -1,6 +1,7 @@
 import { useState, useRef, useCallback } from "react";
 import { ChevronDown, Phone, Menu, X, ArrowRight } from "lucide-react";
 import { AnimatePresence, motion } from "framer-motion";
+import { Link } from "react-router-dom";
 
 import fpv7Img from "@/assets/products/fpv-7.jpg";
 import fpv10Img from "@/assets/products/fpv-10.jpg";
@@ -12,6 +13,7 @@ import sudarshanImg from "@/assets/products/sudarshan.jpg";
 interface Product {
   name: string;
   image: string;
+  slug: string;
 }
 
 interface MegaMenuData {
@@ -22,31 +24,31 @@ interface MegaMenuData {
 const megaMenuData: Record<string, MegaMenuData> = {
   FPV: {
     products: [
-      { name: "FPV 7", image: fpv7Img },
-      { name: "FPV 10", image: fpv10Img },
+      { name: "FPV 7", image: fpv7Img, slug: "fpv-7" },
+      { name: "FPV 10", image: fpv10Img, slug: "fpv-10" },
     ],
     description:
       "High-speed first-person-view drones designed for tactical reconnaissance, precision maneuvering, and real-time battlefield awareness.",
   },
   Kamikaze: {
     products: [
-      { name: "Shiva 1", image: shiva1Img },
-      { name: "Shiva 1 (VTX VRX)", image: shiva1Img },
-      { name: "Shiva 5 (Electric)", image: shiva5Img },
-      { name: "Shiva 5 (VTX VRX & Long Telemetry)", image: shiva5Img },
-      { name: "Shiva 5 (IC Engine)", image: shiva5Img },
-      { name: "Shiva 20 (IC Engine)", image: shiva20Img },
-      { name: "Shiva 20 (IC Engine with VTX VRX & Long Telemetry)", image: shiva20Img },
+      { name: "Shiva 1", image: shiva1Img, slug: "shiva-1" },
+      { name: "Shiva 1 (VTX VRX)", image: shiva1Img, slug: "shiva-1-vtx-vrx" },
+      { name: "Shiva 5 (Electric)", image: shiva5Img, slug: "shiva-5-electric" },
+      { name: "Shiva 5 (VTX VRX & Long Telemetry)", image: shiva5Img, slug: "shiva-5-vtx-vrx" },
+      { name: "Shiva 5 (IC Engine)", image: shiva5Img, slug: "shiva-5-ic" },
+      { name: "Shiva 20 (IC Engine)", image: shiva20Img, slug: "shiva-20-ic" },
+      { name: "Shiva 20 (IC Engine with VTX VRX & Long Telemetry)", image: shiva20Img, slug: "shiva-20-ic-vtx" },
     ],
     description:
       "Loitering munition drones designed for precision strike missions with long-range telemetry and advanced targeting capabilities.",
   },
   "Surveillance & Dropping": {
     products: [
-      { name: "Sudarshan AC", image: sudarshanImg },
-      { name: "Sudarshan AC Range+", image: sudarshanImg },
-      { name: "Sudarshan AC Payload+", image: sudarshanImg },
-      { name: "Sudarshan Alt+", image: sudarshanImg },
+      { name: "Sudarshan AC", image: sudarshanImg, slug: "sudarshan-ac" },
+      { name: "Sudarshan AC Range+", image: sudarshanImg, slug: "sudarshan-ac-range-plus" },
+      { name: "Sudarshan AC Payload+", image: sudarshanImg, slug: "sudarshan-ac-payload-plus" },
+      { name: "Sudarshan Alt+", image: sudarshanImg, slug: "sudarshan-alt-plus" },
     ],
     description:
       "Multi-mission drones designed for aerial surveillance, payload delivery, and extended-range intelligence gathering.",
@@ -109,9 +111,9 @@ const SiteHeader = () => {
       {/* Main nav */}
       <div className="h-[72px] bg-background/95 backdrop-blur-md border-b border-border">
         <div className="container-main flex items-center justify-between h-full">
-          <a href="/" className="font-display text-2xl font-bold tracking-tight text-foreground">
+          <Link to="/" className="font-display text-2xl font-bold tracking-tight text-foreground">
             Abhy<span className="text-primary">Uday</span>
-          </a>
+          </Link>
 
           {/* Desktop nav */}
           <nav className="hidden lg:flex items-center gap-7">
@@ -177,9 +179,10 @@ const SiteHeader = () => {
                     }`}
                   >
                     {megaData.products.map((product) => (
-                      <a
+                      <Link
                         key={product.name}
-                        href="#"
+                        to={`/product/${product.slug}`}
+                        onClick={() => setActiveMenu(null)}
                         className="group rounded-lg border border-border bg-card p-3 transition-all duration-300 hover:shadow-lg hover:-translate-y-1 hover:border-primary/30"
                       >
                         <div className="aspect-square rounded-md overflow-hidden bg-muted mb-3">
@@ -192,7 +195,7 @@ const SiteHeader = () => {
                         <p className="text-sm font-semibold text-foreground group-hover:text-primary transition-colors leading-tight">
                           {product.name}
                         </p>
-                      </a>
+                      </Link>
                     ))}
                   </div>
                 </div>
