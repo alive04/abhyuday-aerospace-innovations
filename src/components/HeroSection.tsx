@@ -20,7 +20,7 @@ const HeroSection = () => {
           className="max-w-2xl"
         >
           <h1 className="font-display text-7xl md:text-8xl font-bold leading-none mb-4">
-            <span className="text-secondary-foreground">NETRA </span>
+            <span className="text-secondary-foreground">SHIVA </span>
             <span className="text-primary">5</span>
           </h1>
           <p className="text-primary text-xl md:text-2xl font-medium mb-8 tracking-wide">

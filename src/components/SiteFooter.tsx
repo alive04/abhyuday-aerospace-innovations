@@ -21,9 +21,9 @@ const SiteFooter = () => {
               Pioneering autonomous drone systems for defense and security applications.
             </p>
             <div className="mt-6 space-y-3 text-sm text-secondary-foreground/60">
-              <p className="flex items-center gap-2"><Mail size={14} /> info@abhyuday.com</p>
-              <p className="flex items-center gap-2"><Phone size={14} /> +91 84476 12678</p>
-              <p className="flex items-center gap-2"><MapPin size={14} /> Bengaluru, India</p>
+              <p className="flex items-center gap-2"><Mail size={14} /> info@abhyuday.in</p>
+              <p className="flex items-center gap-2"><Phone size={14} /> +91 91735 29393</p>
+              <p className="flex items-center gap-2"><MapPin size={14} /> Thaltej, India</p>
             </div>
           </div>
 
