@@ -112,7 +112,7 @@ const SiteHeader = () => {
       <div className="h-[72px] bg-background/95 backdrop-blur-md border-b border-border">
         <div className="container-main flex items-center justify-between h-full">
           <Link to="/" className="font-display text-2xl font-bold tracking-tight text-foreground">
-            Abhy<span className="text-primary">Uday</span>
+            Abhy<span className="text-primary">uday</span>
           </Link>
 
           {/* Desktop nav */}

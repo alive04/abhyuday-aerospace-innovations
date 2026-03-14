@@ -24,7 +24,7 @@ const HeroSection = () => {
             <span className="text-primary">5</span>
           </h1>
           <p className="text-primary text-xl md:text-2xl font-medium mb-8 tracking-wide">
-            Unmatched Resilience
+            Engineered for Endurance
           </p>
           <motion.button
             whileHover={{ scale: 1.05 }}

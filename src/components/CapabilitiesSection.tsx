@@ -25,7 +25,7 @@ const CapabilitiesSection = () => {
               Built for the Modern Battlefield
             </h2>
             <p className="text-muted-foreground leading-relaxed mb-10">
-              AbhyUday's drone systems integrate cutting-edge autonomy, encrypted data links, and advanced sensor
+              Abhyuday's drone systems integrate cutting-edge autonomy, encrypted data links, and advanced sensor
               payloads to deliver decisive advantages across the full spectrum of operations.
             </p>
             <div className="grid sm:grid-cols-2 gap-5">

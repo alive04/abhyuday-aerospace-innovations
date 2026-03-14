@@ -120,10 +120,10 @@ export const products: ProductData[] = [
     heroImage: shivaHeroImg,
     cardImage: shiva1Img,
     specs: [
-      { label: "Loiter Time", value: "20 min", prefix: "Up to" },
-      { label: "Range", value: "5 km", prefix: "Up to" },
-      { label: "Warhead", value: "500 g", prefix: "Up to" },
-      { label: "Launch Weight", value: "2.5 kg", prefix: "Up to" },
+      { label: "Range", value: "10 km + 10 km", prefix: "Up to" },
+      { label: "Telemetry Range", value: "10 km", prefix: "Up to" },
+      { label: "Payload", value: "1 kg", prefix: "Up to" },
+      { label: "Wing Span", value: "2.0 m", prefix: "Up to" },
     ],
     payloads: [
       { name: "EFP Warhead", details: ["Explosively Formed Penetrator", "Armored Target Capability"] },
@@ -152,10 +152,10 @@ export const products: ProductData[] = [
     heroImage: shivaHeroImg,
     cardImage: shiva1Img,
     specs: [
-      { label: "Loiter Time", value: "18 min", prefix: "Up to" },
-      { label: "Video Range", value: "7 km", prefix: "Up to" },
-      { label: "Warhead", value: "500 g", prefix: "Up to" },
-      { label: "Launch Weight", value: "2.8 kg", prefix: "Up to" },
+      { label: "Range", value: "10 km + 10 km", prefix: "Up to" },
+      { label: "Telemetry Range", value: "10 km", prefix: "Up to" },
+      { label: "Payload", value: "1 kg", prefix: "Up to" },
+      { label: "Wing Span", value: "2.0 m", prefix: "Up to" },
     ],
     payloads: [
       { name: "HD Video TX", details: ["Long Range Video Link", "Real-time BDA Feed"] },
@@ -184,10 +184,10 @@ export const products: ProductData[] = [
     heroImage: shivaHeroImg,
     cardImage: shiva5Img,
     specs: [
-      { label: "Loiter Time", value: "35 min", prefix: "Up to" },
-      { label: "Range", value: "15 km", prefix: "Up to" },
-      { label: "Warhead", value: "2 kg", prefix: "Up to" },
-      { label: "Launch Weight", value: "8 kg", prefix: "Up to" },
+      { label: "Range", value: "100 km", prefix: "Up to" },
+      { label: "Telemetry Range", value: "40 km", prefix: "Up to" },
+      { label: "Payload", value: "5 kg", prefix: "Up to" },
+      { label: "Wing Span", value: "3.5 m", prefix: "Up to" },
     ],
     payloads: [
       { name: "HEAT Warhead", details: ["High-Explosive Anti-Tank", "ERA Defeat Capability"] },
@@ -200,7 +200,7 @@ export const products: ProductData[] = [
       { title: "Counter-Battery" },
     ],
     features: [
-      { title: "2kg Warhead", description: "Heavier warhead class enables engagement of armored and fortified targets." },
+      { title: "5kg Warhead", description: "Heavier warhead class enables engagement of armored and fortified targets." },
       { title: "All-Electric", description: "Zero thermal signature during loiter phase for enhanced survivability." },
       { title: "Autonomous Tracking", description: "AI-powered target tracking maintains lock through evasive maneuvers." },
       { title: "Salvo Launch", description: "Multiple units can be launched in rapid succession for saturation attacks." },
@@ -216,13 +216,13 @@ export const products: ProductData[] = [
     heroImage: shivaHeroImg,
     cardImage: shiva5Img,
     specs: [
-      { label: "Loiter Time", value: "30 min", prefix: "Up to" },
-      { label: "Telemetry Range", value: "25 km", prefix: "Up to" },
-      { label: "Warhead", value: "2 kg", prefix: "Up to" },
-      { label: "Launch Weight", value: "8.5 kg", prefix: "Up to" },
+      { label: "Range", value: "100 km", prefix: "Up to" },
+      { label: "Telemetry Range", value: "100 km", prefix: "Up to" },
+      { label: "Payload", value: "5 kg", prefix: "Up to" },
+      { label: "Wing Span", value: "3.5 m", prefix: "Up to" },
     ],
     payloads: [
-      { name: "Long Range Video", details: ["25km Video Downlink", "Encrypted HD Feed"] },
+      { name: "Long Range Video", details: ["100km Video Downlink", "Encrypted HD Feed"] },
       { name: "Multi-Effect Warhead", details: ["Configurable Blast Pattern", "Fragmentation + EFP"] },
     ],
     useCases: [
@@ -232,7 +232,7 @@ export const products: ProductData[] = [
       { title: "Network-Centric Ops" },
     ],
     features: [
-      { title: "25km Telemetry", description: "Long-range encrypted telemetry for beyond-visual-range operations." },
+      { title: "100km Telemetry", description: "Long-range encrypted telemetry for beyond-visual-range operations." },
       { title: "HD Video Link", description: "Dedicated video channel ensures real-time operator situational awareness." },
       { title: "Multi-Effect Warhead", description: "Configurable warhead allows fragmentation or penetration modes." },
       { title: "Mission Planning", description: "Pre-programmed waypoint navigation with manual override capability." },
@@ -248,10 +248,10 @@ export const products: ProductData[] = [
     heroImage: shivaHeroImg,
     cardImage: shiva5Img,
     specs: [
-      { label: "Loiter Time", value: "90 min", prefix: "Up to" },
-      { label: "Range", value: "40 km", prefix: "Up to" },
-      { label: "Warhead", value: "2 kg", prefix: "Up to" },
-      { label: "Launch Weight", value: "12 kg", prefix: "Up to" },
+      { label: "Range", value: "100 km", prefix: "Up to" },
+      { label: "Telemetry Range", value: "40 km", prefix: "Up to" },
+      { label: "Payload", value: "5 kg", prefix: "Up to" },
+      { label: "Wing Span", value: "3.5 m", prefix: "Up to" },
     ],
     payloads: [
       { name: "HEAT Warhead", details: ["Anti-Armor Penetrator", "Top-Attack Profile"] },
@@ -280,10 +280,10 @@ export const products: ProductData[] = [
     heroImage: shivaHeroImg,
     cardImage: shiva20Img,
     specs: [
-      { label: "Loiter Time", value: "120 min", prefix: "Up to" },
-      { label: "Range", value: "80 km", prefix: "Up to" },
-      { label: "Warhead", value: "8 kg", prefix: "Up to" },
-      { label: "Launch Weight", value: "35 kg", prefix: "Up to" },
+      { label: "Range", value: "300 km", prefix: "Up to" },
+      { label: "Telemetry Range", value: "40 km", prefix: "Up to" },
+      { label: "Payload", value: "20 kg", prefix: "Up to" },
+      { label: "Wing Span", value: "4.5 m", prefix: "Up to" },
     ],
     payloads: [
       { name: "Tandem HEAT", details: ["Tandem Shaped Charge", "ERA + Main Armor Defeat"] },
@@ -296,8 +296,8 @@ export const products: ProductData[] = [
       { title: "Strategic Assets" },
     ],
     features: [
-      { title: "8kg Warhead", description: "Heavy warhead class capable of defeating main battle tanks and hardened positions." },
-      { title: "80km Range", description: "Strategic range enables engagement of deep rear-area targets." },
+      { title: "20kg Warhead", description: "Heavy warhead class capable of defeating main battle tanks and hardened positions." },
+      { title: "300km Range", description: "Strategic range enables engagement of deep rear-area targets." },
       { title: "Multi-Spectral Seeker", description: "All-weather target acquisition through combined EO/IR/mmWave sensors." },
       { title: "Vehicle Launch", description: "Launched from ground vehicles for rapid tactical deployment." },
     ],
@@ -312,10 +312,10 @@ export const products: ProductData[] = [
     heroImage: shivaHeroImg,
     cardImage: shiva20Img,
     specs: [
-      { label: "Loiter Time", value: "110 min", prefix: "Up to" },
+      { label: "Range", value: "300 km", prefix: "Up to" },
       { label: "Telemetry Range", value: "100 km", prefix: "Up to" },
-      { label: "Warhead", value: "8 kg", prefix: "Up to" },
-      { label: "Launch Weight", value: "38 kg", prefix: "Up to" },
+      { label: "Payload", value: "20 kg", prefix: "Up to" },
+      { label: "Wing Span", value: "4.5 m", prefix: "Up to" },
     ],
     payloads: [
       { name: "Tandem HEAT", details: ["Dual Stage Penetrator", "Active Protection Defeat"] },
@@ -345,10 +345,10 @@ export const products: ProductData[] = [
     heroImage: sudarshanHeroImg,
     cardImage: sudarshanImg,
     specs: [
-      { label: "VLOS", value: "2 km", prefix: "Up to" },
-      { label: "Radio Range", value: "15 km", prefix: "Up to" },
+      { label: "Altitude", value: "1 km", prefix: "Up to" },
+      { label: "Range", value: "10 km + 10 km", prefix: "Up to" },
       { label: "Flight Time", value: "45 min", prefix: "Up to" },
-      { label: "Take-off Weight", value: "6.5 kg", prefix: "Up to" },
+      { label: "Take-off Weight", value: "5 kg", prefix: "Up to" },
     ],
     payloads: [
       { name: "Daylight Camera", details: ["30X Optical Zoom", "4K Ultra HD"] },
@@ -377,14 +377,14 @@ export const products: ProductData[] = [
     heroImage: sudarshanHeroImg,
     cardImage: sudarshanImg,
     specs: [
-      { label: "VLOS", value: "2 km", prefix: "Up to" },
-      { label: "Radio Range", value: "25 km", prefix: "Up to" },
+      { label: "Altitude", value: "1 km", prefix: "Up to" },
+      { label: "Range", value: "20 km + 20 km", prefix: "Up to" },
       { label: "Flight Time", value: "50 min", prefix: "Up to" },
-      { label: "Take-off Weight", value: "7.0 kg", prefix: "Up to" },
+      { label: "Take-off Weight", value: "5.0 kg", prefix: "Up to" },
     ],
     payloads: [
       { name: "EO/IR Gimbal", details: ["30X Zoom + Thermal", "Stabilized 3-Axis"] },
-      { name: "Long Range Radio", details: ["25km Data Link", "AES-256 Encrypted"] },
+      { name: "Long Range Radio", details: ["20km Data Link", "AES-256 Encrypted"] },
     ],
     useCases: [
       { title: "Wide Area Surveillance" },
@@ -393,7 +393,7 @@ export const products: ProductData[] = [
       { title: "Forest Fire Detection" },
     ],
     features: [
-      { title: "25km Radio Range", description: "Extended communication range for deep-area surveillance operations." },
+      { title: "20km Radio Range", description: "Extended communication range for deep-area surveillance operations." },
       { title: "50min Endurance", description: "Optimized power management extends mission duration significantly." },
       { title: "Encrypted Link", description: "Military-grade AES-256 encryption on all data channels." },
       { title: "Relay Mode", description: "Supports mesh relay for extending range beyond single-hop limits." },
@@ -409,13 +409,13 @@ export const products: ProductData[] = [
     heroImage: sudarshanHeroImg,
     cardImage: sudarshanImg,
     specs: [
-      { label: "Max Payload", value: "3 kg", prefix: "Up to" },
-      { label: "Radio Range", value: "15 km", prefix: "Up to" },
+      { label: "Altitude", value: "1 km", prefix: "Up to" },
+      { label: "Range", value: "10 km + 10 km", prefix: "Up to" },
       { label: "Flight Time", value: "35 min", prefix: "Up to" },
-      { label: "Take-off Weight", value: "9.5 kg", prefix: "Up to" },
+      { label: "Max Payload", value: "10.0 kg", prefix: "Up to" },
     ],
     payloads: [
-      { name: "Delivery Module", details: ["3kg Payload Capacity", "Precision Drop Mechanism"] },
+      { name: "Delivery Module", details: ["10kg Payload Capacity", "Precision Drop Mechanism"] },
       { name: "Surveillance Camera", details: ["1080p Live Feed", "Target Marking"] },
     ],
     useCases: [
@@ -425,7 +425,7 @@ export const products: ProductData[] = [
       { title: "Emergency Response" },
     ],
     features: [
-      { title: "3kg Payload", description: "Generous payload capacity for supply and munition delivery missions." },
+      { title: "10kg Payload", description: "Generous payload capacity for supply and munition delivery missions." },
       { title: "Precision Drop", description: "GPS-guided release mechanism ensures accurate payload delivery." },
       { title: "Multi-Drop", description: "Configurable for single or sequential multi-point delivery missions." },
       { title: "Hover & Drop", description: "Stable hover capability for precision vertical payload placement." },
@@ -441,10 +441,10 @@ export const products: ProductData[] = [
     heroImage: sudarshanHeroImg,
     cardImage: sudarshanImg,
     specs: [
-      { label: "Max Altitude", value: "5500 m", prefix: "Up to" },
-      { label: "Radio Range", value: "20 km", prefix: "Up to" },
+      { label: "Max Altitude", value: "5000 m", prefix: "Up to" },
+      { label: "Range", value: "10 km + 10 km", prefix: "Up to" },
       { label: "Flight Time", value: "40 min", prefix: "Up to" },
-      { label: "Take-off Weight", value: "7.5 kg", prefix: "Up to" },
+      { label: "Take-off Weight", value: "5 kg", prefix: "Up to" },
     ],
     payloads: [
       { name: "High-Alt EO/IR", details: ["Pressure-Compensated Gimbal", "30X Zoom + Thermal"] },
@@ -457,7 +457,7 @@ export const products: ProductData[] = [
       { title: "Search & Rescue" },
     ],
     features: [
-      { title: "5500m Ceiling", description: "High-altitude optimized motors and props for operation above 5000m ASL." },
+      { title: "5000m Ceiling", description: "High-altitude optimized motors and props for operation above 5000m ASL." },
       { title: "Cold Weather Ops", description: "Battery heating and cold-start systems for -20°C operation." },
       { title: "High Wind Tolerance", description: "Stable flight in winds up to 45 km/h at altitude." },
       { title: "Terrain Following", description: "LIDAR-assisted terrain following for safe nap-of-the-earth flight." },
