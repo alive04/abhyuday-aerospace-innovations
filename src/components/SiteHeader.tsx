@@ -111,8 +111,8 @@ const SiteHeader = () => {
       {/* Main nav */}
       <div className="h-[72px] bg-background/95 backdrop-blur-md border-b border-border">
         <div className="container-main flex items-center justify-between h-full">
-          <Link to="/" className="font-display text-2xl font-bold tracking-tight text-foreground">
-            Abhy<span className="text-primary">uday</span>
+          <Link to="/" className="flex items-center gap-2">
+            <img src="/src/assets/logo_1.svg" alt="Abhyuday Aerospace" className="h-14 w-auto" />
           </Link>
 
           {/* Desktop nav */}

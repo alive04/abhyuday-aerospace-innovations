@@ -37,14 +37,14 @@ const HeroSection = () => {
         </motion.div>
       </div>
 
-      {/* Info Pack floating button */}
+      {/* Info Pack floating button
       <motion.button
         whileHover={{ scale: 1.1 }}
         className="fixed bottom-8 right-8 z-50 w-20 h-20 rounded-full bg-primary text-primary-foreground flex flex-col items-center justify-center shadow-lg shadow-primary/30 text-xs font-bold uppercase tracking-wide"
       >
         <Info size={18} className="mb-0.5" />
         Info Pack
-      </motion.button>
+      </motion.button> */}
     </section>
   );
 };
