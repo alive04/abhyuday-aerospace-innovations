@@ -15,7 +15,7 @@ const SiteFooter = () => {
           {/* Brand col */}
           <div className="lg:col-span-1">
             <a href="/" className="inline-flex items-center">
-              <img src="/src/assets/logo_1.svg" alt="Abhyuday Aerospace" className="h-12 w-auto" />
+              <img src="../assets/logo_1.svg" alt="Abhyuday Aerospace" className="h-12 w-auto" />
             </a>
             <p className="mt-4 text-secondary-foreground/50 text-sm leading-relaxed">
               Pioneering autonomous drone systems for defense and security applications.
