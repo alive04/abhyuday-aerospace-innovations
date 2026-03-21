@@ -9,6 +9,7 @@ import shiva1Img from "@/assets/products/shiva-1.jpg";
 import shiva5Img from "@/assets/products/shiva-5.jpg";
 import shiva20Img from "@/assets/products/shiva-20.jpg";
 import sudarshanImg from "@/assets/products/sudarshan.jpg";
+import logo from "../assets/logo_1.svg";
 
 interface Product {
   name: string;
@@ -112,7 +113,7 @@ const SiteHeader = () => {
       <div className="h-[72px] bg-background/95 backdrop-blur-md border-b border-border">
         <div className="container-main flex items-center justify-between h-full">
           <Link to="/" className="flex items-center gap-2">
-            <img src="/src/assets/logo_1.svg" alt="Abhyuday Aerospace" className="h-14 w-auto" />
+            <img src={logo} alt="Abhyuday Aerospace" className="h-14 w-auto" />
           </Link>
 
           {/* Desktop nav */}
