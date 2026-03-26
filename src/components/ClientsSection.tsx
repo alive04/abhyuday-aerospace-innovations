@@ -1,14 +1,23 @@
 import { motion } from "framer-motion";
 
+import indianArmy from "../assets/clients/indian-army.png";
+import indianNavy from "../assets/clients/indian-navy.png";
+import bsf from "../assets/clients/bsf.png";
+import crpf from "../assets/clients/crpf.png";
+import drdo from "../assets/clients/drdo.png";
+import hal from "../assets/clients/hal.png";
+import bel from "../assets/clients/bel.png";
+import isro from "../assets/clients/isro.png";
+
 const clients = [
-  "Indian Army",
-  "Indian Navy",
-  "BSF",
-  "CRPF",
-  "DRDO",
-  "HAL",
-  "BEL",
-  "ISRO",
+  { name: "Indian Army", logo: indianArmy },
+  { name: "Indian Navy", logo: indianNavy },
+  { name: "BSF", logo: bsf },
+  { name: "CRPF", logo: crpf },
+  { name: "DRDO", logo: drdo },
+  { name: "HAL", logo: hal },
+  { name: "BEL", logo: bel },
+  { name: "ISRO", logo: isro },
 ];
 
 const ClientsSection = () => {
@@ -31,15 +40,23 @@ const ClientsSection = () => {
         <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
           {clients.map((client, i) => (
             <motion.div
-              key={client}
+              key={client.name}
               initial={{ opacity: 0, y: 15 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: i * 0.05, duration: 0.4 }}
-              className="group flex items-center justify-center h-24 rounded-xl border border-border bg-card transition-all duration-300 hover:border-primary/30 hover:shadow-md"
+              className="group flex flex-col items-center justify-center h-32 rounded-xl border border-border bg-card transition-all duration-300 hover:border-primary/30 hover:shadow-md"
             >
-              <span className="font-display font-bold text-muted-foreground text-lg transition-colors duration-300 group-hover:text-foreground">
-                {client}
+              <img
+                src={client.logo}
+                alt={client.name}
+                loading="lazy"
+                width={512}
+                height={512}
+                className="h-16 w-auto object-contain grayscale opacity-60 transition-all duration-300 group-hover:grayscale-0 group-hover:opacity-100"
+              />
+              <span className="mt-2 text-xs font-medium text-muted-foreground transition-colors duration-300 group-hover:text-foreground">
+                {client.name}
               </span>
             </motion.div>
           ))}
