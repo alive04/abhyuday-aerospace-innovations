@@ -45,19 +45,14 @@ const ClientsSection = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: i * 0.05, duration: 0.4 }}
-              className="group flex flex-col items-center justify-center h-32 rounded-xl border border-border bg-card transition-all duration-300 hover:border-primary/30 hover:shadow-md"
+              className="group flex items-center justify-center h-28 rounded-xl border border-border bg-card px-6 transition-all duration-300 hover:border-primary/30 hover:shadow-md"
             >
               <img
                 src={client.logo}
                 alt={client.name}
                 loading="lazy"
-                width={512}
-                height={512}
-                className="h-16 w-auto object-contain grayscale opacity-60 transition-all duration-300 group-hover:grayscale-0 group-hover:opacity-100"
+                className="max-h-16 w-auto object-contain grayscale opacity-50 transition-all duration-300 group-hover:grayscale-0 group-hover:opacity-100"
               />
-              <span className="mt-2 text-xs font-medium text-muted-foreground transition-colors duration-300 group-hover:text-foreground">
-                {client.name}
-              </span>
             </motion.div>
           ))}
         </div>
